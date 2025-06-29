@@ -1,41 +1,80 @@
-# 🌸 Task 1: Iris Dataset Exploratory Data Analysis (EDA)
+🧪 Task 1: Exploring and Visualizing a Simple Dataset
+📌 Objective
+The goal of this task is to perform Exploratory Data Analysis (EDA) on a well-known dataset to understand its structure, trends, and feature relationships through various visualizations.
 
-This task performs an exploratory data analysis (EDA) on the famous **Iris flower dataset** using `pandas`, `seaborn`, and `matplotlib`. The goal is to understand the structure, distribution, and relationships within the dataset.
+📂 Dataset Used
+Name: Iris Dataset
 
----
+Source: Built-in with seaborn library
 
-## 📁 Dataset Used
+Description: The Iris dataset contains 150 samples of iris flowers from three species (setosa, versicolor, virginica). It includes 4 features per sample:
 
-We use the built-in `iris` dataset available via the `seaborn` library. It contains 150 rows and 5 columns (4 numeric features + species label).
+sepal_length
 
-| Feature         | Description              |
-|----------------|--------------------------|
-| sepal_length   | Sepal length in cm       |
-| sepal_width    | Sepal width in cm        |
-| petal_length   | Petal length in cm       |
-| petal_width    | Petal width in cm        |
-| species        | Iris species (setosa, versicolor, virginica) |
+sepal_width
 
----
+petal_length
 
-## 📊 What This Task Covers
+petal_width
 
-1. Loading the Iris dataset.
-2. Displaying basic info (structure, missing values, statistics).
-3. Visualizations:
-   - Scatter plot (Sepal length vs. width, colored by species)
-   - Histograms of all features
-   - Box plots for feature distribution and outliers
+🔧 Tools and Libraries
+pandas – for data loading and inspection
 
----
+matplotlib – for plotting and charts
 
-## 🧪 Libraries Used
+seaborn – for advanced visualizations
 
-- `pandas`
-- `seaborn`
-- `matplotlib`
+📊 Tasks Performed
+✅ Loaded the Iris dataset using seaborn.load_dataset()
 
-Install them if needed using:
+✅ Displayed dataset structure using .head(), .info(), .describe()
 
-```bash
-pip install pandas seaborn matplotlib
+✅ Checked for missing values
+
+✅ Visualized relationships using:
+
+Scatter Plot: Sepal length vs width by species
+
+Histograms: Distribution of each feature
+
+Box Plots: To detect outliers in the dataset
+
+📈 Sample Visuals
+🔹 Scatter Plot
+Displays the relation between sepal length and width by species.
+
+🔹 Histograms
+Shows the frequency distribution of each numerical column.
+
+🔹 Box Plots
+Helps identify outliers and spread of the data.
+
+🧠 Key Insights
+No missing data in the dataset
+
+Distinct separation between species based on petal measurements
+
+Setosa is clearly distinguishable from other species in visual plots
+
+Some overlap exists between versicolor and virginica
+
+📁 Folder Structure
+bash
+Copy
+Edit
+Task1_Exploratory_Analysis/
+├── iris_eda.ipynb             # Main Jupyter notebook
+├── README.md                  # Project summary (this file)
+✅ Completion Checklist
+ Dataset Loaded
+
+ EDA Completed
+
+ Visualizations Plotted
+
+ Summary Documented
+
+🔗 Credits
+Dataset: Seaborn Iris Dataset
+
+Internship Program: AI/ML Engineering Internship – DevelopersHub Corporation
